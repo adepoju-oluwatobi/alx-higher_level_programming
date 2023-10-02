@@ -10,10 +10,10 @@
  * @next: point to the next node
  * Description: list node structure
  */
-typedef struct listint_s
+typedef struct listint_t
 {
 	int num;
-	struct listint_s *next;
+	struct listint_t *next;
 } listint_t;
 
 int check_cycle(listint_t *list);
