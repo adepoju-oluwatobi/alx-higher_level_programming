@@ -5,8 +5,8 @@
  * check_cycle - Checks if a singly-linked list contains a cycle.
  * @list: A singly-linked list.
  *
- * Return: If there is no cycle - 0.
- *         If there is a cycle - 1.
+ * Return: 0 if no cycle and 1 if there is cycle
+ *
  */
 int check_cycle(listint_t *list)
 {
