@@ -1,6 +1,3 @@
-ascii_value = ord('a')
-
-while ascii_value <= ord('z'):
-    print(chr(ascii_value), end='')
-
-    ascii_value += 1
+#!/usr/bin/python3
+for i in range(ord('a'), ord('z') + 1):
+    print('{:c}'.format(i), end='')
