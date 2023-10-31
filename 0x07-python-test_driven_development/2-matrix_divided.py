@@ -13,7 +13,7 @@ def matrix_divided(matrix, div):
         A new matrix with the result of the division
     Raises:
         TypeError: If the elements of the matrix aren't lists
-                   If the elemetns of the lists aren't integers/floats
+                   If the elements of the lists aren't integers/floats
                    If div is not an integer/float number
                    If the lists of the matrix don't have the same size
         ZeroDivisionError: If div is zero
@@ -33,18 +33,18 @@ def matrix_divided(matrix, div):
     len_e = 0
     msg_size = "Each row of the matrix must have the same size"
 
-    for elems in matrix:
-        if not elems or not isinstance(elems, list):
+    for elements in matrix:
+        if not elements or not isinstance(elements, list):
             raise TypeError(msg_type)
 
-        if len_e != 0 and len(elems) != len_e:
+        if len_e != 0 and len(elements) != len_e:
             raise TypeError(msg_size)
 
-        for num in elems:
+        for num in elements:
             if not type(num) in (int, float):
                 raise TypeError(msg_type)
 
-        len_e = len(elems)
+        len_e = len(elements)
 
     m = list(map(lambda x: list(map(lambda y: round(y / div, 2), x)), matrix))
     return (m)
